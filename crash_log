@@ -1,0 +1,1038 @@
+F/OpenGLRenderer(30080): drawRenderNode called on a context with no surface!
+F/mple.crash_dem(30080): runtime.cc:655] Runtime aborting...
+F/mple.crash_dem(30080): runtime.cc:655] Dumping all threads without mutator lock held
+F/mple.crash_dem(30080): runtime.cc:655] All threads:
+F/mple.crash_dem(30080): runtime.cc:655] DALVIK THREADS (42):
+F/mple.crash_dem(30080): runtime.cc:655] "RenderThread" prio=10 tid=23 Runnable
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=0 dsCount=0 flags=0 obj=0x137c09f0 self=0xb400006f57939400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30500 nice=-10 cgrp=default sched=0/0 handle=0x6f3cffbcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=R schedstat=( 1153379392 248640278 4514 ) utm=83 stm=31 core=0 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f3cf04000-0x6f3cf06000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes= "abort lock" "mutator lock"(shared held)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 000000000047a32c  /apex/com.android.art/lib64/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, int, BacktraceMap*, char const*, art::ArtMethod*, void*, bool)+140)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000057f804  /apex/com.android.art/lib64/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, bool, BacktraceMap*, bool) const+404)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000059c650  /apex/com.android.art/lib64/libart.so (art::DumpCheckpoint::Run(art::Thread*)+924)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000595ff4  /apex/com.android.art/lib64/libart.so (art::ThreadList::RunCheckpoint(art::Closure*, art::Closure*)+536)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000005950b0  /apex/com.android.art/lib64/libart.so (art::ThreadList::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, bool)+1928)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 000000000053222c  /apex/com.android.art/lib64/libart.so (art::Runtime::Abort(char const*)+1896)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 000000000001394c  /system/lib64/libbase.so (android::base::SetAborter(std::__1::function<void (char const*)>&&)::$_3::__invoke(char const*)+76)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 0000000000006d10  /system/lib64/liblog.so (__android_log_assert+336)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 0000000000224c74  /system/lib64/libhwui.so (android::uirenderer::skiapipeline::SkiaOpenGLPipeline::getFrame()+52)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 000000000022d5f0  /system/lib64/libhwui.so (android::uirenderer::renderthread::CanvasContext::draw()+404)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 000000000022fac4  /system/lib64/libhwui.so (_ZNSt3__110__function6__funcIZN7android10uirenderer12renderthread13DrawFrameTask11postAndWaitEvE3$_0NS_9allocatorIS6_EEFvvEEclEv$c303f2d2360db58ed70a2d0ac7ed911b+528)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #11 pc 000000000021e184  /system/lib64/libhwui.so (android::uirenderer::WorkQueue::process()+208)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #12 pc 000000000024029c  /system/lib64/libhwui.so (android::uirenderer::renderthread::RenderThread::threadLoop()+88)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #13 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #14 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #15 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #16 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "main" prio=10 tid=1 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x721c5ec8 self=0xb40000704d7d5c00
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30080 nice=-10 cgrp=default sched=0/0 handle=0x704ee4f4f8
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 2050124550 358327383 4174 ) utm=169 stm=35 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x7fca2f0000-0x7fca2f2000 stackSize=8192KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000022f480  /system/lib64/libhwui.so (android::uirenderer::renderthread::DrawFrameTask::postAndWait()+256)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 0000000000213a10  /system/lib64/libhwui.so (android::android_view_ThreadedRenderer_syncAndDrawFrame(_JNIEnv*, _jobject*, long, _jlongArray*, int)+84)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.graphics.HardwareRenderer.nSyncAndDrawFrame(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.graphics.HardwareRenderer.syncAndDrawFrame(HardwareRenderer.java:433)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.ThreadedRenderer.draw(ThreadedRenderer.java:703)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.ViewRootImpl.draw(ViewRootImpl.java:4477)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.ViewRootImpl.performDraw(ViewRootImpl.java:4200)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3451)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2211)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:8738)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1031)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.Choreographer.doCallbacks(Choreographer.java:849)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.Choreographer.doFrame(Choreographer.java:779)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1016)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Handler.handleCallback(Handler.java:938)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Handler.dispatchMessage(Handler.java:99)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Looper.loop(Looper.java:257)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.app.ActivityThread.main(ActivityThread.java:8215)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.reflect.Method.invoke(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:626)
+F/mple.crash_dem(30080): runtime.cc:655]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1015)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Signal Catcher" prio=10 tid=3 WaitingInMainSignalCatcherLoop
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0338 self=0xb40000704d7d7800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30162 nice=-20 cgrp=default sched=0/0 handle=0x6fb8562cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 682969 2435782 14 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb846b000-0x6fb846d000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_sigtimedwait+0x178/0x340
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: copy_siginfo_from_user32+0x37c/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000de738  /apex/com.android.runtime/lib64/bionic/libc.so (__rt_sigtimedwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000009c3bc  /apex/com.android.runtime/lib64/bionic/libc.so (sigwait+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000557f44  /apex/com.android.art/lib64/libart.so (art::SignalCatcher::WaitForSignal(art::Thread*, art::SignalSet&)+432)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000556b34  /apex/com.android.art/lib64/libart.so (art::SignalCatcher::Run(void*)+272)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "perfetto_hprof_listener" prio=10 tid=7 Native (still starting up)
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x0 self=0xb400006fa5fba400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30184 nice=-20 cgrp=default sched=0/0 handle=0x6fb8464cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 280519 2172448 12 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb836d000-0x6fb836f000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: pipe_read+0x208/0x308
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __vfs_read+0xf4/0x138
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: vfs_read+0xb8/0x150
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: ksys_read+0x6c/0xf0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: ksys_read+0xe8/0xf0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000ddab4  /apex/com.android.runtime/lib64/bionic/libc.so (read+4)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 0000000000018904  /apex/com.android.art/lib64/libperfetto_hprof.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, ArtPlugin_Initialize::$_29> >(void*)+276)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ADB-JDWP Connection Control Thread" prio=10 tid=8 WaitingInMainDebuggerLoop
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c03b0 self=0xb400006fb724e800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30193 nice=-20 cgrp=default sched=0/0 handle=0x6fb8366cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 1332602 7212188 20 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb826f000-0x6fb8271000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_sys_poll+0x3b0/0x7d8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_select+0xf10/0x1758
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000dedf8  /apex/com.android.runtime/lib64/bionic/libc.so (__ppoll+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 00000000000998ac  /apex/com.android.runtime/lib64/bionic/libc.so (poll+92)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000009ee0  /apex/com.android.art/lib64/libadbconnection.so (adbconnection::AdbConnectionState::RunPollLoop(art::Thread*)+864)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000000852c  /apex/com.android.art/lib64/libadbconnection.so (adbconnection::CallbackFunction(void*)+1488)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ReferenceQueueDaemon" prio=5 tid=9 Waiting
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0428 self=0xb400006fa5fd2800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30200 nice=4 cgrp=default sched=0/0 handle=0x6fb805dcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 8627705 19591200 24 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb7f5a000-0x6fb7f5c000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000019ee64  /apex/com.android.art/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+148)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000004753dc  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)+544)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000476ce0  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long, int, bool, art::ThreadState)+280)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Object.wait(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   - waiting on <0x0b239b84> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Object.wait(Object.java:442)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Object.wait(Object.java:568)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:217)
+F/mple.crash_dem(30080): runtime.cc:655]   - locked <0x0b239b84> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.run(Thread.java:923)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "FinalizerDaemon" prio=5 tid=10 Waiting
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c04a0 self=0xb400006fa5fd4400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30203 nice=4 cgrp=default sched=0/0 handle=0x6fb7f53cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 11513336 28662241 23 ) utm=1 stm=0 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb7e50000-0x6fb7e52000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000019ee64  /apex/com.android.art/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+148)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000004753dc  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)+544)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000476ce0  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long, int, bool, art::ThreadState)+280)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Object.wait(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   - waiting on <0x03a39f6d> (a java.lang.Object)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Object.wait(Object.java:442)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:190)
+F/mple.crash_dem(30080): runtime.cc:655]   - locked <0x03a39f6d> (a java.lang.Object)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:211)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:273)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.run(Thread.java:923)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "FinalizerWatchdogDaemon" prio=5 tid=11 Sleeping
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0518 self=0xb400006fa5fdb000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30204 nice=4 cgrp=default sched=0/0 handle=0x6fb7e49cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 272290 6022499 10 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb7d46000-0x6fb7d48000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x170/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089cd0  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+32)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000019f234  /apex/com.android.art/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000004753f0  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)+564)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000476ce0  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long, int, bool, art::ThreadState)+280)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.sleep(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   - sleeping on <0x028c47a2> (a java.lang.Object)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.sleep(Thread.java:442)
+F/mple.crash_dem(30080): runtime.cc:655]   - locked <0x028c47a2> (a java.lang.Object)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.sleep(Thread.java:358)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$FinalizerWatchdogDaemon.sleepForNanos(Daemons.java:390)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$FinalizerWatchdogDaemon.waitForFinalization(Daemons.java:419)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:325)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.run(Thread.java:923)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "HeapTaskDaemon" prio=5 tid=12 WaitingForTaskProcessor
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1c70 self=0xb400006fa5fd0c00
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30196 nice=4 cgrp=default sched=0/0 handle=0x6fb8167cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 71082710 132774844 60 ) utm=6 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb8064000-0x6fb8066000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000019ee64  /apex/com.android.art/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+148)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000002d735c  /apex/com.android.art/lib64/libart.so (art::gc::TaskProcessor::GetTask(art::Thread*)+540)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 00000000002d7c80  /apex/com.android.art/lib64/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+92)
+F/mple.crash_dem(30080): runtime.cc:655]   at dalvik.system.VMRuntime.runHeapTasks(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$HeapTaskDaemon.runInternal(Daemons.java:531)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.run(Thread.java:923)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Binder:30080_1" prio=5 tid=13 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0598 self=0xb400006fa5fe7400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30205 nice=0 cgrp=default sched=0/0 handle=0x6fb7b41cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 4568956 10441667 27 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb7a4a000-0x6fb7a4c000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_thread_read+0x638/0x33d0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_ioctl+0x784/0xfa8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_vfs_ioctl+0x6bc/0xfc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: ksys_ioctl+0x108/0x130
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000ddd34  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+4)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000009727c  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+156)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000051414  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+248)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000051628  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 0000000000051ec0  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000079174  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Jit thread pool worker thread 0" prio=5 tid=14 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0610 self=0xb400006fb7268000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30194 nice=0 cgrp=default sched=0/0 handle=0x6fb826cd00
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 518495016 200978240 935 ) utm=38 stm=13 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb816e000-0x6fb8170000 stackSize=1023KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000019ee64  /apex/com.android.art/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+148)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000059e2ac  /apex/com.android.art/lib64/libart.so (art::ThreadPool::GetTask(art::Thread*)+120)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000059d640  /apex/com.android.art/lib64/libart.so (art::ThreadPoolWorker::Run()+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 000000000059d10c  /apex/com.android.art/lib64/libart.so (art::ThreadPoolWorker::Callback(void*)+192)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Binder:30080_2" prio=5 tid=15 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0688 self=0xb400006fa6002c00
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30229 nice=0 cgrp=default sched=0/0 handle=0x6fb7a43cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 9103749 16879326 59 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb794c000-0x6fb794e000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_thread_read+0x638/0x33d0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_ioctl+0x784/0xfa8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_vfs_ioctl+0x6bc/0xfc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: ksys_ioctl+0x108/0x130
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000ddd34  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+4)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000009727c  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+156)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000051414  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+248)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000051628  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 0000000000051eec  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+108)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000079174  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Binder:30080_3" prio=5 tid=16 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0700 self=0xb400006fb7279800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30288 nice=0 cgrp=default sched=0/0 handle=0x6fb7945cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 17021199 29797342 92 ) utm=1 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb784e000-0x6fb7850000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_thread_read+0x638/0x33d0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_ioctl+0x784/0xfa8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_vfs_ioctl+0x6bc/0xfc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: ksys_ioctl+0x108/0x130
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000ddd34  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+4)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000009727c  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+156)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000051414  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+248)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000051628  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 0000000000051eec  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+108)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000079174  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "vivo.PerfThread" prio=5 tid=17 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0778 self=0xb400006fa5fdcc00
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30358 nice=0 cgrp=default sched=0/0 handle=0x6fb7847cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 5749218 31771094 42 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb7744000-0x6fb7746000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000001a1f8  /system/lib64/libutils.so (android::Looper::pollInner(int)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000001a0dc  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000115d34  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.nativePollOnce(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.next(MessageQueue.java:339)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Looper.loop(Looper.java:208)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.HandlerThread.run(HandlerThread.java:67)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Profile Saver" prio=5 tid=18 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c08b0 self=0xb400006fb72bb000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30433 nice=9 cgrp=default sched=0/0 handle=0x6f57693cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 18579429 15333908 38 ) utm=1 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f5759c000-0x6f5759e000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x170/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089cd0  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+32)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000019f234  /apex/com.android.art/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000339074  /apex/com.android.art/lib64/libart.so (art::ProfileSaver::Run()+672)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000033d620  /apex/com.android.art/lib64/libart.so (art::ProfileSaver::RunProfileSaverThread(void*)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "AsyncTask #1" prio=4 tid=20 Waiting
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0928 self=0xb400006fa6019400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30440 nice=10 cgrp=default sched=0/0 handle=0x6f553dfcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 247816556 317818490 485 ) utm=18 stm=6 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f552dc000-0x6f552de000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 0000000000575d6c  /apex/com.android.art/lib64/libart.so (art::Thread::Park(bool, long)+480)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000004b34cc  /apex/com.android.art/lib64/libart.so (art::Unsafe_park(_JNIEnv*, _jobject*, unsigned char, long)+660)
+F/mple.crash_dem(30080): runtime.cc:655]   at sun.misc.Unsafe.park(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   - waiting on an unknown object
+F/mple.crash_dem(30080): runtime.cc:655]   at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:459)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1092)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Thread.run(Thread.java:923)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "1.ui" prio=6 tid=22 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0a68 self=0xb400006f3fa12400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30474 nice=-1 cgrp=default sched=0/0 handle=0x6f51274cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 2291545834 293378041 1808 ) utm=203 stm=25 core=0 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f5117d000-0x6f5117f000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000001a1f8  /system/lib64/libutils.so (android::Looper::pollInner(int)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000001a0dc  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000012c80  /system/lib64/libandroid.so (ALooper_pollOnce+100)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000015e9d80  /data/app/~~Rfze1xd_nVm40JcBseTZ3g==/com.example.crash_demo-4RJxe1djy4M92LD-03-EQw==/lib/arm64/libflutter.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 00000000015e449c  /data/app/~~Rfze1xd_nVm40JcBseTZ3g==/com.example.crash_demo-4RJxe1djy4M92LD-03-EQw==/lib/arm64/libflutter.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 00000000015e83f8  /data/app/~~Rfze1xd_nVm40JcBseTZ3g==/com.example.crash_demo-4RJxe1djy4M92LD-03-EQw==/lib/arm64/libflutter.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Chrome_ProcessLauncherThread" prio=5 tid=25 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0ae0 self=0xb400006f57971000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30562 nice=0 cgrp=default sched=0/0 handle=0x6f3a301cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 16521405 21871255 60 ) utm=1 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f3a1fe000-0x6f3a200000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000001a1f8  /system/lib64/libutils.so (android::Looper::pollInner(int)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000001a0dc  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000115d34  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.nativePollOnce(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.next(MessageQueue.java:339)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Looper.loop(Looper.java:208)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.HandlerThread.run(HandlerThread.java:67)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "GoogleApiHandler" prio=5 tid=27 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0c18 self=0xb400006f57976400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30564 nice=9 cgrp=default sched=0/0 handle=0x6f3a0edcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 18777600 54932603 55 ) utm=1 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f39fea000-0x6f39fec000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000001a1f8  /system/lib64/libutils.so (android::Looper::pollInner(int)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000001a0dc  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000115d34  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.nativePollOnce(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.next(MessageQueue.java:339)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Looper.loop(Looper.java:208)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.HandlerThread.run(HandlerThread.java:67)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Chrome_IOThread" prio=7 tid=28 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0d50 self=0xb400006f37a2ac00
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30570 nice=-4 cgrp=default sched=0/0 handle=0x6f2e006cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 494272755 255956621 3933 ) utm=30 stm=19 core=0 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f2df0f000-0x6f2df11000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000340b9c0  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ThreadPoolForeg" prio=5 tid=29 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0dc8 self=0xb400006f39611000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30566 nice=0 cgrp=default sched=0/0 handle=0x6f39ae5cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 2953541 6048074 54 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f399ee000-0x6f399f0000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x170/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089cd0  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+32)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f37a0  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_timedwait+120)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 00000000042ecdf8  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "PlatformServiceBridgeHandlerThread" prio=5 tid=30 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0e40 self=0xb400006f57934000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30608 nice=0 cgrp=default sched=0/0 handle=0x6f2151ccc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 6729118 7363021 53 ) utm=0 stm=0 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f21419000-0x6f2141b000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000001a1f8  /system/lib64/libutils.so (android::Looper::pollInner(int)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000001a0dc  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000115d34  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.nativePollOnce(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.next(MessageQueue.java:339)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Looper.loop(Looper.java:208)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.HandlerThread.run(HandlerThread.java:67)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ThreadPoolSingl" prio=5 tid=31 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0f30 self=0xb400006f39622800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30603 nice=0 cgrp=default sched=0/0 handle=0x6f2161acc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 66475568 73047241 453 ) utm=2 stm=3 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f21523000-0x6f21525000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000427422c  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "CleanupReference" prio=5 tid=32 Waiting
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c0fa8 self=0xb400006f57972c00
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30625 nice=0 cgrp=default sched=0/0 handle=0x6f1d10acc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 668540 10013646 11 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f1d007000-0x6f1d009000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000019ee64  /apex/com.android.art/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+148)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000004753dc  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)+544)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000476ce0  /apex/com.android.art/lib64/libart.so (art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long, int, bool, art::ThreadState)+280)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Object.wait(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   - waiting on <0x0cda0c33> (a java.lang.Object)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.Object.wait(Object.java:442)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:190)
+F/mple.crash_dem(30080): runtime.cc:655]   - locked <0x0cda0c33> (a java.lang.Object)
+F/mple.crash_dem(30080): runtime.cc:655]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:211)
+F/mple.crash_dem(30080): runtime.cc:655]   at sl.run(chromium-TrichromeWebViewGoogle6432.aab-stable-519507734:52)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "AudioThread" prio=5 tid=33 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1220 self=0xb400006f3975a000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30587 nice=0 cgrp=default sched=0/0 handle=0x6f29e0acc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 6464689 11247497 38 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f29d13000-0x6f29d15000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000427422c  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ThreadPoolForeg" prio=5 tid=34 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1298 self=0xb400006f57935c00
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30589 nice=0 cgrp=default sched=0/0 handle=0x6f28d0ccc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 94773547 53383234 195 ) utm=8 stm=1 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f28c15000-0x6f28c17000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x170/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089cd0  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+32)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f37a0  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_timedwait+120)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 00000000042ecdf8  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "NetworkService" prio=5 tid=35 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1310 self=0xb400006f37bd4000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30592 nice=0 cgrp=default sched=0/0 handle=0x6f28914cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 675937149 342373876 3574 ) utm=44 stm=23 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f2881d000-0x6f2881f000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000340b9c0  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Chrome_InProcGpuThread" prio=7 tid=36 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1388 self=0xb400006f3976b800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30627 nice=-4 cgrp=default sched=0/0 handle=0x6f1bf7bcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=R schedstat=( 822875577 79340059 653 ) utm=59 stm=23 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f1be84000-0x6f1be86000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: 0x1
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000ddd38  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000009727c  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+156)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000001ead9c  /vendor/lib64/libgsl.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 00000000001ee720  /vendor/lib64/libgsl.so (ioctl_kgsl_sharedmem_alloc+304)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000bf708  /vendor/lib64/libgsl.so (gsl_memory_alloc_pure+88)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 00000000000fdb18  /vendor/lib64/egl/libGLESv2_adreno.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 00000000000fd5b8  /vendor/lib64/egl/libGLESv2_adreno.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 000000000022c768  /vendor/lib64/egl/libGLESv2_adreno.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 00000000001334fc  /vendor/lib64/egl/libGLESv2_adreno.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 000000000016a918  /vendor/lib64/egl/libGLESv2_adreno.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 00000000001aace4  /vendor/lib64/egl/libGLESv2_adreno.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #11 pc 000000000500cf38  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ThreadPoolForeg" prio=5 tid=37 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1400 self=0xb400006f37be5800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30569 nice=0 cgrp=default sched=0/0 handle=0x6f2e104cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 39384482 15077231 240 ) utm=3 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f2e00d000-0x6f2e00f000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x170/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089cd0  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+32)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f37a0  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_timedwait+120)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 00000000042ecdf8  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ThreadPoolForeg" prio=5 tid=38 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1478 self=0xb400006f39630000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30590 nice=0 cgrp=default sched=0/0 handle=0x6f28c0ecc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 174741892 124279043 1361 ) utm=7 stm=10 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f28b17000-0x6f28b19000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x170/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089cd0  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+32)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f37a0  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_timedwait+120)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 00000000042ecdf8  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "1.raster" prio=8 tid=39 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c14f0 self=0xb400006f37d72000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30475 nice=-5 cgrp=default sched=0/0 handle=0x6f50176cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 710019672 236107857 2571 ) utm=52 stm=18 core=0 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f5007f000-0x6f50081000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000001a1f8  /system/lib64/libutils.so (android::Looper::pollInner(int)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000001a0dc  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000012c80  /system/lib64/libandroid.so (ALooper_pollOnce+100)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000015e9d80  /data/app/~~Rfze1xd_nVm40JcBseTZ3g==/com.example.crash_demo-4RJxe1djy4M92LD-03-EQw==/lib/arm64/libflutter.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 00000000015e449c  /data/app/~~Rfze1xd_nVm40JcBseTZ3g==/com.example.crash_demo-4RJxe1djy4M92LD-03-EQw==/lib/arm64/libflutter.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 00000000015e83f8  /data/app/~~Rfze1xd_nVm40JcBseTZ3g==/com.example.crash_demo-4RJxe1djy4M92LD-03-EQw==/lib/arm64/libflutter.so (???)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "hwuiTask0" prio=6 tid=2 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1568 self=0xb400006fb724b000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30698 nice=-2 cgrp=default sched=0/0 handle=0x6fb6bdbcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 422134 1457135 14 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb6ae4000-0x6fb6ae6000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000058a78  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+20)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 0000000000243da8  /system/lib64/libhwui.so (android::uirenderer::CommonPool::workerLoop()+88)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000243fd8  /system/lib64/libhwui.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, android::uirenderer::CommonPool::CommonPool()::$_0> >(void*)+128)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "hwuiTask1" prio=6 tid=4 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c15e0 self=0xb400006fb720e000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30700 nice=-2 cgrp=default sched=0/0 handle=0x6fb6addcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 1667658 2018490 18 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb69e6000-0x6fb69e8000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000058a78  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+20)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 0000000000243da8  /system/lib64/libhwui.so (android::uirenderer::CommonPool::workerLoop()+88)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000243fd8  /system/lib64/libhwui.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, android::uirenderer::CommonPool::CommonPool()::$_0> >(void*)+128)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "queued-work-looper" prio=6 tid=5 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1658 self=0xb400006f3bae1000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30708 nice=-2 cgrp=default sched=0/0 handle=0x6fb627fcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 431146 807552 10 ) utm=0 stm=0 core=3 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6fb617c000-0x6fb617e000 stackSize=1043KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_wait+0x2e4/0x420
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_epoll_ctl+0xde4/0xfb0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000decf8  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000001a1f8  /system/lib64/libutils.so (android::Looper::pollInner(int)+180)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 000000000001a0dc  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+112)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000115d34  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.nativePollOnce(Native method)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.MessageQueue.next(MessageQueue.java:339)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.Looper.loop(Looper.java:208)
+F/mple.crash_dem(30080): runtime.cc:655]   at android.os.HandlerThread.run(HandlerThread.java:67)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ThreadPoolForeg" prio=5 tid=6 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1748 self=0xb400006fa5fb8800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30588 nice=0 cgrp=default sched=0/0 handle=0x6f28b10cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 61334780 27494007 437 ) utm=3 stm=2 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f28a19000-0x6f28a1b000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x170/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089cd0  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+32)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f37a0  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_timedwait+120)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 00000000042ecdf8  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ThreadPoolSingl" prio=5 tid=42 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c17c0 self=0xb400006fb7234800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30591 nice=0 cgrp=default sched=0/0 handle=0x6f28a12cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 37605043 14170476 133 ) utm=3 stm=0 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f2891b000-0x6f2891d000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000427422c  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "HwBinder:30080_1" prio=10 tid=45 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c18b0 self=0xb400006f39838000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30769 nice=-10 cgrp=default sched=0/0 handle=0x6f3a4fdcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 11411933 6464375 157 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f3a406000-0x6f3a408000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_thread_read+0x638/0x33d0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_ioctl+0x784/0xfa8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_vfs_ioctl+0x6bc/0xfc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: ksys_ioctl+0x108/0x130
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000ddd34  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+4)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000009727c  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+156)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000086fac  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::talkWithDriver(bool)+216)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000087210  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+44)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000884ec  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+152)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000093f30  /system/lib64/libhidlbase.so (android::hardware::PoolThread::threadLoop()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ImageReader-1x1f23u256m2-30080-3" prio=5 tid=24 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1a18 self=0xb400006fb6443800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30820 nice=0 cgrp=default sched=0/0 handle=0x6f3a97bcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 597709 3011144 14 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f3a884000-0x6f3a886000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000001cc68  /system/lib64/libstagefright_foundation.so (android::ALooper::loop()+384)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000154d8  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+216)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ImageReader-1x1f23u256m2-30080-4" prio=5 tid=44 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1a90 self=0xb400006f17fbd400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30824 nice=0 cgrp=default sched=0/0 handle=0x6f12d6bcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 443386 2677187 18 ) utm=0 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f12c74000-0x6f12c76000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000001cc68  /system/lib64/libstagefright_foundation.so (android::ALooper::loop()+384)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000154d8  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+216)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "ImageReader-1x1f23u256m2-30080-5" prio=5 tid=48 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1b08 self=0xb400006fb6455000
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30826 nice=0 cgrp=default sched=0/0 handle=0x6f12a6dcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 411460 1425208 14 ) utm=0 stm=0 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f12976000-0x6f12978000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000001cc68  /system/lib64/libstagefright_foundation.so (android::ALooper::loop()+384)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 00000000000154d8  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+216)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "Binder:30080_4" prio=5 tid=51 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1b80 self=0xb400006f18003800
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30845 nice=0 cgrp=default sched=0/0 handle=0x6f419fbcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 23283127 25346404 65 ) utm=2 stm=0 core=2 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f41904000-0x6f41906000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_thread_read+0x638/0x33d0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: binder_ioctl+0x784/0xfa8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_vfs_ioctl+0x6bc/0xfc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: ksys_ioctl+0x108/0x130
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 00000000000ddd34  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+4)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000009727c  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+156)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000051414  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+248)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000051628  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 0000000000051eec  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+108)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000079174  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 00000000000a0fd4  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] "MemoryInfra" prio=5 tid=19 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=1 dsCount=0 flags=1 obj=0x137c1bf8 self=0xb400006fa5fac400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30571 nice=0 cgrp=default sched=0/0 handle=0x6f2df08cc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=S schedstat=( 27322917 4230311 29 ) utm=2 stm=0 core=1 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f2de11000-0x6f2de13000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes=
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __switch_to+0x118/0x128
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait_queue_me+0x238/0xab8
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_wait+0x30c/0x440
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: do_futex+0x2c8/0x1cc0
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: futex_lock_pi+0xa24/0xb10
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x144/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: __arm_smccc_hvc+0x90/0x514
+F/mple.crash_dem(30080): runtime.cc:655]   kernel: el0_svc+0x8/0xc
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 0000000000089ccc  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000008db98  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+144)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 00000000000f36fc  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 000000000427422c  /data/app/~~s1pnCjDb1otZR_0p4Ej6lg==/com.google.android.trichromelibrary_519507734-CzEfXZ3sgGs6hdrxo7dsxw==/base.apk!libmonochrome_64.so (offset 891000) (???)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/mple.crash_dem(30080): runtime.cc:655] Aborting thread:
+F/mple.crash_dem(30080): runtime.cc:655] "RenderThread" prio=10 tid=23 Native
+F/mple.crash_dem(30080): runtime.cc:655]   | group="" sCount=0 dsCount=0 flags=0 obj=0x137c09f0 self=0xb400006f57939400
+F/mple.crash_dem(30080): runtime.cc:655]   | sysTid=30500 nice=-10 cgrp=default sched=0/0 handle=0x6f3cffbcc0
+F/mple.crash_dem(30080): runtime.cc:655]   | state=R schedstat=( 1301386740 258762311 4666 ) utm=93 stm=36 core=0 HZ=100
+F/mple.crash_dem(30080): runtime.cc:655]   | stack=0x6f3cf04000-0x6f3cf06000 stackSize=995KB
+F/mple.crash_dem(30080): runtime.cc:655]   | held mutexes= "abort lock"
+F/mple.crash_dem(30080): runtime.cc:655]   native: #00 pc 000000000047a32c  /apex/com.android.art/lib64/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, int, BacktraceMap*, char const*, art::ArtMethod*, void*, bool)+140)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #01 pc 000000000057f804  /apex/com.android.art/lib64/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, bool, BacktraceMap*, bool) const+404)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #02 pc 0000000000546044  /apex/com.android.art/lib64/libart.so (art::AbortState::DumpThread(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, art::Thread*) const+60)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #03 pc 0000000000532468  /apex/com.android.art/lib64/libart.so (art::Runtime::Abort(char const*)+2468)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #04 pc 000000000001394c  /system/lib64/libbase.so (android::base::SetAborter(std::__1::function<void (char const*)>&&)::$_3::__invoke(char const*)+76)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #05 pc 0000000000006d10  /system/lib64/liblog.so (__android_log_assert+336)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #06 pc 0000000000224c74  /system/lib64/libhwui.so (android::uirenderer::skiapipeline::SkiaOpenGLPipeline::getFrame()+52)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #07 pc 000000000022d5f0  /system/lib64/libhwui.so (android::uirenderer::renderthread::CanvasContext::draw()+404)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #08 pc 000000000022fac4  /system/lib64/libhwui.so (_ZNSt3__110__function6__funcIZN7android10uirenderer12renderthread13DrawFrameTask11postAndWaitEvE3$_0NS_9allocatorIS6_EEFvvEEclEv$c303f2d2360db58ed70a2d0ac7ed911b+528)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #09 pc 000000000021e184  /system/lib64/libhwui.so (android::uirenderer::WorkQueue::process()+208)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #10 pc 000000000024029c  /system/lib64/libhwui.so (android::uirenderer::renderthread::RenderThread::threadLoop()+88)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #11 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #12 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #13 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64)
+F/mple.crash_dem(30080): runtime.cc:655]   native: #14 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64)
+F/mple.crash_dem(30080): runtime.cc:655]   (no managed stack frames)
+F/mple.crash_dem(30080): runtime.cc:655]
+F/libc    (30080): Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 30500 (RenderThread), pid 30080 (mple.crash_demo)
+Softversion: PD2055D_A_1.10.22
+Time: 2022-09-23 14:01:21
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'vivo/PD2055/PD2055:11/RP1A.200720.012/compiler0208154918:user/release-keys'
+Revision: '0'
+ABI: 'arm64'
+Timestamp: 2022-09-23 14:01:21+0800
+pid: 30080, tid: 30500, name: RenderThread  >>> com.example.crash_demo <<<
+uid: 10987
+signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+Abort message: 'drawRenderNode called on a context with no surface!'
+    x0  0000000000000000  x1  0000000000007724  x2  0000000000000006  x3  0000006f3cffb210
+    x4  0000006f3cffacc0  x5  0000006f3cffacc0  x6  0000006f3cffacc0  x7  0000000000000000
+    x8  00000000000000f0  x9  da8412a7c07d90eb  x10 0000000000000000  x11 ffffffc0fffffbdf
+    x12 0000000000000001  x13 0000000000000004  x14 0000000000000068  x15 930b05a075a0cbac
+    x16 000000704b983948  x17 000000704b960630  x18 0000006f3ca10000  x19 0000000000007580
+    x20 0000000000007724  x21 00000000ffffffff  x22 0000000000000001  x23 000000000000000b
+    x24 0000006fc6e93235  x25 0000000000000001  x26 0000006fc6eaa216  x27 0000006fc7461000
+    x28 b40000704d825380  x29 0000006f3cffb290
+    lr  000000704b90fd24  sp  0000006f3cffb1f0  pc  000000704b90fd50  pst 0000000000001000
+backtrace:
+      #00 pc 000000000008cd50  /apex/com.android.runtime/lib64/bionic/libc.so (abort+164) (BuildId: cea9159973293d0520e9105a73ca766b)
+      #01 pc 00000000005323e8  /apex/com.android.art/lib64/libart.so (art::Runtime::Abort(char const*)+2340) (BuildId: 4668f50e7fa08dfa94bab4e2f1a1e23b)
+      #02 pc 000000000001394c  /system/lib64/libbase.so (android::base::SetAborter(std::__1::function<void (char const*)>&&)::$_3::__invoke(char const*)+76) (BuildId: 793454aefa3c4b1f2944594b637be656)
+      #03 pc 0000000000006d10  /system/lib64/liblog.so (__android_log_assert+336) (BuildId: 26a506075a631f1f83e5d593b1b96364)
+      #04 pc 0000000000224c74  /system/lib64/libhwui.so (android::uirenderer::skiapipeline::SkiaOpenGLPipeline::getFrame()+52) (BuildId: 995c8eba9b0342a1da3609a80a7a47f6)
+      #05 pc 000000000022d5f0  /system/lib64/libhwui.so (android::uirenderer::renderthread::CanvasContext::draw()+404) (BuildId: 995c8eba9b0342a1da3609a80a7a47f6)
+      #06 pc 000000000022fac4  /system/lib64/libhwui.so (_ZNSt3__110__function6__funcIZN7android10uirenderer12renderthread13DrawFrameTask11postAndWaitEvE3$_0NS_9allocatorIS6_EEFvvEEclEv$c303f2d2360db58ed70a2d0ac7ed911b+528) (BuildId: 995c8eba9b0342a1da3609a80a7a47f6)
+      #07 pc 000000000021e184  /system/lib64/libhwui.so (android::uirenderer::WorkQueue::process()+208) (BuildId: 995c8eba9b0342a1da3609a80a7a47f6)
+      #08 pc 000000000024029c  /system/lib64/libhwui.so (android::uirenderer::renderthread::RenderThread::threadLoop()+88) (BuildId: 995c8eba9b0342a1da3609a80a7a47f6)
+      #09 pc 0000000000015540  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+320) (BuildId: 5615e6ef22747d3f5cb3ffb0b808b2f6)
+      #10 pc 0000000000014db4  /system/lib64/libutils.so (thread_data_t::trampoline(thread_data_t const*)+408) (BuildId: 5615e6ef22747d3f5cb3ffb0b808b2f6)
+      #11 pc 00000000000f43f0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64) (BuildId: cea9159973293d0520e9105a73ca766b)
+      #12 pc 000000000008ef34  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: cea9159973293d0520e9105a73ca766b)
