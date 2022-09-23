@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 @pragma('vm:entry-point')
 void main() {
@@ -36,8 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: const WebView(
-          initialUrl: 'www.flutter.cn',
+        child: InAppWebView(
+          initialUrlRequest: URLRequest(url: Uri.parse('www.flutter.cn')),
         ),
       ),
     );
